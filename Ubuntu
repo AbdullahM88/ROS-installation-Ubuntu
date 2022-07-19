@@ -1,0 +1,8 @@
+to download Ubuntu go to the formal site 'https://releases.ubuntu.com/20.04/'
+download the version 20.04 
+then the image file of ubuntu will appear in the downloads folder.
+open the file and install ubuntu in the usual way.
+after the installation is over, go to the VirtualBox and create a new virtual machine with the name Ubuntu.
+choice the standard setting depending on your device.
+after you create the Ubuntu virtual machine click the settings button and go to the storage box, then add the ubuntu image file that we have downloaded already.
+now you can start ubuntu by clicking on the start button.
