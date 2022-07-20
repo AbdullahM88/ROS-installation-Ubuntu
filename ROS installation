@@ -1,0 +1,11 @@
+here we will mention the bisc commands to install ROS1 in Ubuntu.
+open the terminal window and write the following commands:
+first, configure your computer to accept software from packages.ros.org.>> sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+now you need to open the key server in your computer >> sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+now make sure your Debian package index is up-to-date >> sudo apt update
+after you make the necessary updates and installation, now install the recommended desktop-full >> sudo apt install ros-noetic-desktop-full
+* it will take time to install ROS, depending on your internet connection.
+It can be convenient to automatically source this script every time a new shell is launched. this command will do that for you >> echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
+if you want to install tools and other dependencies for building ROS packages >> sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+now you need to install and update the rosdep which in turn enables you to easily install system dependencies for the source you want to compile and is required to run some core components in ROS >> sudo rosdep init >> rosdep update
+now to ensure that you had installed ROS on your computer, run >> roscore #this command will display the necessary information about ROS.
